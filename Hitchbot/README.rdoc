@@ -1,28 +1,14 @@
-== README
+==README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Test RubyOnRails with XML (Nokogiri)
 
-Things you may want to cover:
+Le test consiste à générer 2 pages à partir de ce feed: http://hitchbot.wordans.ca/my/products.xml
+ - une page qui affiche tous les produits avec des miniatures : http://localhost:3000/
+    (avec des liens vers les pages de produit individuelles)
+ 
+ - une page qui affiche un produit en particulier et comments : http://localhost:3000/posts
+ 
+ - ~/HitchBOT/public/products.xml : Fichier products.xml
+Les visiteurs doivent pouvoir ajouter des commentaires sur la page d'affichage d'un produit (stocké avec sqlite, mysql, ou postgres). Le formulaire doit avoir 2 champs: Nom et Commentaire. Les 2 champs ne doivent pas être vide ni contenir de HTML.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Technologies à utiliser: Rails, Bootstrap 3
